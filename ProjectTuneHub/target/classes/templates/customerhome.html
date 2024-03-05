@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Customer Home</title>
+<link rel="stylesheet" type="text/css" th:href="@{/customerhome.css}">
+
+</head>
+<body>
+	<div th:unless="${ispremium}" class="non-premium">
+	<h3>Welcome to TuneHUB</h3>
+	<p><i>Get premium to experience the World of Music</i></p>
+		<form action="pay">
+			<input type="submit" value="GET PREMIUM">
+		</form>
+		<br/><br/>
+		<form action="logout">
+			<input type="submit" value="LOGOUT">
+		</form>
+	</div> 
+	<div th:if="${ispremium}" class="premium">
+		<table>
+			<thead>
+				<tr>
+					<th>Play</th>
+					<th>Name</th>
+					<th>Artist</th>
+					<th>Genre</th>
+				<tr />
+			</thead>
+			<tbody>
+				<tr th:each=song:${songs}>
+					<td><audio controls class="play-button-only">
+							<source th:src="${song.link}">
+						</audio></td>
+					<td th:text="${song.name}"></td>
+					<td th:text="${song.artist}"></td>
+					<td th:text="${song.genre}"></td>
+				</tr>
+			</tbody>
+			</div>
+</body>
+</html>
+
+
+
+<!-- <br/> -->
+<!-- <br/> -->
+<!-- <form action="playsongs"> -->
+<!-- <input type="submit" value="PLAY SONGS"> -->
+<!-- </form> -->
+<!-- <br/> -->
+<!-- <br/> -->
+<!-- <form action="pay"> -->
+<!-- <input type="submit" value="GET PREMIUM"> -->
+<!-- </form> -->
+<!-- <br/> -->
+<!-- <br/> -->
+<!-- <form action="logout"> -->
+<!-- <input type="submit" value="LOGOUT"> -->
+<!-- </form> -->

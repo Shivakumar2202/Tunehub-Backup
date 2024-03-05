@@ -1,0 +1,68 @@
+body {
+	background-image: url("/bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	height:95vh;
+	display: flex;
+	flex-direction: column;
+	justify-content:center;
+	align-items: center;
+	background-size: cover;
+}
+
+/* CSS for the table */
+table {
+	width: 100%;
+	border-collapse: collapse;
+	backdrop-filter: blur(15px);
+}
+
+/* CSS for table headers */
+th {
+	background-color: transparent;
+	font: caption;
+	border-bottom: solid 2px;
+	color: #e100a7; padding : 8px;
+	text-align: left;
+	padding: 8px;
+}
+
+/* CSS for table data cells */
+td {
+	border-bottom: solid 1px;
+	font: caption;
+	color: #30cfd0;
+	padding: 8px;
+	text-align: left;
+}
+
+/* CSS for alternating row colors */
+tbody tr:nth-child(even) {
+	background-color: transparent;
+}
+
+
+
+.play-button-only {
+	background: transparent;
+	height: 50px;
+	width: 400px;  /* Adjust the width as needed */
+}
+
+.play-button-only::-webkit-media-controls-start-playback-button {
+	background: transparent;
+	display: none;
+}
+
+.play-button-only::-webkit-media-controls-play-button {
+	background-color: #007bff;
+	border-radius: 50%;
+	width: 50px; /* Adjust the size of the button */
+	height: 50px; /* Adjust the size of the button */
+	border: none;
+	cursor: pointer;
+	outline: none;
+}
+

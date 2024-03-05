@@ -1,0 +1,70 @@
+body {
+	background-image: url("./bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	height: 95vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-size: cover;
+}
+
+form {
+	display: flex;
+	color:#30cfd0;
+ 	justify-content: center; 
+ 	align-content:center; 
+	flex-direction: column; 
+	font: caption;
+	border-radius: 5px;
+	backdrop-filter: blur(15px);
+	flex-direction: column;
+}
+label{
+	color:#30cfd0;
+	font-size:20px;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+#name{
+	width: 60%;
+	height: 60%;
+	background: none;
+	margin: 10px;
+	border: none;
+	color:#30cfd0;
+	border-bottom: solid 1px;
+	font-size: 17px;
+	padding-left: 10px;
+	outline: none;	
+}
+h3{
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+	font-size: 25px;
+}
+table{
+	margin:5px;
+	display:flex;
+	justify-content:space-around;
+	font-size: 20px;
+}
+button {
+	margin-top:10px;
+	margin-left:100px;
+	margin-right:100px;
+	height: 40px;
+	width: 350px;
+ 	border:none; 
+ 	align-content:center;
+	border-radius: 5px;
+	font-size: 25px;
+	background: linear-gradient(40deg, #30cfd0 0%, #e100a7 100%);
+	font-size: 25px;
+}
